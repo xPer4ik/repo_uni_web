@@ -3,54 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой сайт</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>FurFut — мебель будущего</title>
+    <link rel="icon" href="assets/icons/Лого.png" type="image/x-icon" />
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <div>
-        <h1>МойСайт</h1>
+        <img src="assets/icons/Лого.png" alt="Логотип FurFut" />
+        <h1>FurFut — мебель будущего</h1>
       </div>
+
       <nav>
         <ul>
-          <li><a href="#home">Главная</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#services">Услуги</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#features">Преимущества</a></li>
           <li><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
+
+      <div>
+        <img src="assets/icons/Search.png" alt="Поиск" />
+        <img src="assets/icons/User--avatar.png" alt="Профиль пользователя" />
+        <img src="assets/icons/Shopping--cart.png" alt="Корзина" />
+      </div>
     </header>
 
     <main>
-      <section id="home">
-        <h2>Добро пожаловать!</h2>
-        <p>Это главная страница нашего веб-приложения.</p>
+      <section>
+        <h2>Мебель нового поколения</h2>
+        <p>
+          Мы создаём инновационную мебель, объединяя технологии, комфорт и
+          современный дизайн.
+        </p>
+        <img src="assets/img/Large.png" alt="Инновационная мебель FurFut" />
+      </section>
+
+      <section id="catalog">
+        <h2>Каталог продукции</h2>
+
+        <article>
+          <img src="assets/img/Photo.png" alt="Модель мебели Smart Sofa" />
+          <h3>Smart Sofa</h3>
+          <p>Умный диван с эргономичной конструкцией.</p>
+        </article>
+
+        <article>
+          <img src="assets/img/Photo(1).png" alt="Модель мебели Future Chair" />
+          <h3>Future Chair</h3>
+          <p>Кресло с адаптацией под пользователя.</p>
+        </article>
+
+        <article>
+          <img src="assets/img/Photo(2).png" alt="Модель мебели Eco Table" />
+          <h3>Eco Table</h3>
+          <p>Экологичный стол из переработанных материалов.</p>
+        </article>
+
+        <article>
+          <img src="assets/img/Photo(3).png" alt="Модель мебели Modular Bed" />
+          <h3>Modular Bed</h3>
+          <p>Модульная кровать для любого интерьера.</p>
+        </article>
       </section>
 
       <section id="about">
-        <h2>О нас</h2>
-        <p>Мы компания, которая занимается созданием качественных веб-решений.</p>
+        <h2>О компании</h2>
+        <p>
+          FurFut — это команда дизайнеров и инженеров, создающих мебель,
+          ориентированную на будущее и комфорт человека.
+        </p>
+        <img src="assets/img/Image.png" alt="Процесс разработки мебели" />
       </section>
 
-      <section id="services">
-        <h2>Наши услуги</h2>
+      <section id="features">
+        <h2>Почему выбирают нас</h2>
+
         <ul>
-          <li>Веб-разработка</li>
-          <li>Дизайн</li>
-          <li>Консультации</li>
+          <li>
+            <img src="assets/icons/Sprout.png" alt="Экологичность" />
+            Экологичные материалы
+          </li>
+          <li>
+            <img src="assets/icons/Delivery.png" alt="Доставка" />
+            Быстрая доставка
+          </li>
+          <li>
+            <img src="assets/icons/Checkmark--outline.png" alt="Качество" />
+            Гарантия качества
+          </li>
         </ul>
+
+        <img src="assets/img/RightImage.png" alt="Современный интерьер" />
       </section>
 
-      <section id="contact">
-        <h2>Контакты</h2>
-        <p>Email: info@example.com</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
-      </section>
+      <aside>
+        <h3>Мы в соцсетях</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="assets/icons/Logo--linkedin.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/icons/Logo--pinterest.png" alt="Pinterest" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/icons/Logo--skype.png" alt="Skype" />
+            </a>
+          </li>
+        </ul>
+      </aside>
     </main>
 
     <footer>
-      <p>&copy; 2025 Сайт. Все права защищены.</p>
+      <section id="contact">
+        <h2>Контакты</h2>
+        <p>Email: info@furfut.ru</p>
+        <p>Телефон: +7 (900) 123-45-67</p>
+      </section>
+      <p>&copy; 2025 FurFut. Все права защищены.</p>
     </footer>
   </body>
 </html>
