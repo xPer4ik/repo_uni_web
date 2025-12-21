@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9fafb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo {
+  width: 48px;
+}
+
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.header__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__icon {
+  width: 24px;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  transition: color 0.3s ease, border-color 0.3s ease, opacity 0.2s ease;
+}
+
+.nav__link:hover {
+  color: #2c5530;
+  border-bottom: 2px solid #2c5530;
+}
+
+.nav__link--active {
+  color: #2c5530;
+  border-bottom: 2px solid #2c5530;
+}
+
+.nav__link:focus {
+  outline: 2px solid #2c5530;
+  outline-offset: 2px;
+}
+
+.nav__link:active {
+  opacity: 0.7;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero__text {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
+.hero__image {
+  max-width: 100%;
+}
+
+.catalog {
+  padding: 3rem 2rem;
+}
+
+.catalog__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card:focus {
+  outline: 2px solid #2c5530;
+  outline-offset: 4px;
+}
+
+.card:active {
+  transform: translateY(-2px);
+}
+
+.card--featured {
+  border: 2px solid #2c5530;
+}
+
+.card__image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  font-size: 0.95rem;
+}
+
+.footer {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.footer__copy {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
