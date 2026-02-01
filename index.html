@@ -6,6 +6,7 @@
     <title>FurFut — мебель будущего</title>
     <link rel="icon" href="assets/icons/Лого.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 1024px)">
   </head>
 
   <body class="page">
@@ -19,7 +20,7 @@
         <h1 class="header__title">FurFut — мебель будущего</h1>
       </div>
 
-      <nav class="header__nav nav">
+      <nav class="header__nav nav" id="mainNav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link--active" href="#catalog">Каталог</a>
@@ -35,6 +36,16 @@
           </li>
         </ul>
       </nav>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
 
       <div class="header__actions">
         <img
@@ -206,5 +217,11 @@
         &copy; 2025 FurFut. Все права защищены.
       </p>
     </footer>
+
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+      ↑
+    </button>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>
